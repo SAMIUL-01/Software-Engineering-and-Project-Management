@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SAMIUL &ndash; MATH WHIZ</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+</head>
+<body>
+<%-- Highlight the active nav item (Leaderboard page vs everything else) --%>
+<% boolean navOnBoard = request.getRequestURI().contains("leaderboard"); %>
+
+<div class="bg-deco" aria-hidden="true">
+    <svg class="wave-tl" viewBox="0 0 300 260" fill="none"><path d="M0 0h300C230 50 180 120 120 170S40 240 0 260Z" fill="#0a3a9a" opacity=".35"/><path d="M0 0h220C170 60 110 110 60 150S20 220 0 230Z" fill="#1565e8" opacity=".35"/></svg>
+    <svg class="wave-tr" viewBox="0 0 260 420" fill="none"><path d="M260 0C190 90 150 180 175 260S230 360 260 420Z" fill="#0f55d0" opacity=".4"/><path d="M260 60C220 130 200 200 215 270S245 350 260 380Z" fill="#2f9bff" opacity=".35"/></svg>
+    <svg class="wave-bl" viewBox="0 0 320 200" fill="none"><path d="M0 200V60C70 30 150 90 210 140S290 190 320 200Z" fill="#0c46b8" opacity=".5"/><path d="M0 200V120C60 100 120 140 180 175L230 200Z" fill="#2f9bff" opacity=".4"/></svg>
+    <svg class="wave-br" viewBox="0 0 400 200" fill="none"><path d="M400 200V40C330 20 250 80 190 130S60 190 0 200Z" fill="#0c46b8" opacity=".5"/><path d="M400 200V110C340 100 280 140 220 175L170 200Z" fill="#2f9bff" opacity=".4"/></svg>
+
+    <span class="sym pi">&pi;</span>
+    <span class="sym sigma">&Sigma;</span>
+    <span class="sym plus">+</span>
+
+    <svg class="graph" viewBox="0 0 150 130" fill="none" stroke="#1e78ff" stroke-width="3" stroke-linecap="round" opacity=".5"><path d="M20 10V110H140"/><path d="M20 105C60 100 70 45 140 30"/><path d="M14 18l6-8 6 8M132 104l8 6-8 6"/></svg>
+    <svg class="calc" viewBox="0 0 100 130" fill="none" stroke="#1e78ff" stroke-width="3"><rect x="10" y="8" width="80" height="114" rx="10"/><rect x="22" y="20" width="56" height="22" rx="4"/><g fill="#1e78ff" stroke="none"><rect x="22" y="54" width="14" height="12" rx="3"/><rect x="43" y="54" width="14" height="12" rx="3"/><rect x="64" y="54" width="14" height="12" rx="3"/><rect x="22" y="74" width="14" height="12" rx="3"/><rect x="43" y="74" width="14" height="12" rx="3"/><rect x="64" y="74" width="14" height="12" rx="3"/><rect x="22" y="94" width="14" height="12" rx="3"/><rect x="43" y="94" width="14" height="12" rx="3"/><rect x="64" y="94" width="14" height="12" rx="3"/></g></svg>
+    <svg class="dots" viewBox="0 0 90 90" fill="#1e78ff"><g><circle cx="5" cy="5" r="2"/><circle cx="25" cy="5" r="2"/><circle cx="45" cy="5" r="2"/><circle cx="65" cy="5" r="2"/><circle cx="85" cy="5" r="2"/><circle cx="5" cy="25" r="2"/><circle cx="25" cy="25" r="2"/><circle cx="45" cy="25" r="2"/><circle cx="65" cy="25" r="2"/><circle cx="85" cy="25" r="2"/><circle cx="5" cy="45" r="2"/><circle cx="25" cy="45" r="2"/><circle cx="45" cy="45" r="2"/><circle cx="65" cy="45" r="2"/><circle cx="85" cy="45" r="2"/></g></svg>
+</div>
+
+<div class="wrap">
+    <header class="top">
+        <div class="brand">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#19b8ff" d="M32 8 2 22l30 14 22-10v16h4V24Z"/><path fill="#1e78ff" d="M14 34v10c0 5 8 10 18 10s18-5 18-10V34L32 42Z"/></svg>
+            <h1>Samiul <span>&ndash; MATH WHIZ</span></h1>
+        </div>
+        <nav>
+            <a href="${pageContext.request.contextPath}/index.jsp" class="<%= navOnBoard ? "" : "active" %>">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 1.5 12H5v9h5v-6h4v6h5v-9h3.5Z"/></svg>Home</a>
+            <a href="${pageContext.request.contextPath}/leaderboard" class="<%= navOnBoard ? "active" : "" %>">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v2h4v3a5 5 0 0 1-4.3 4.9A5.5 5.5 0 0 1 13 15.5V18h3v3H8v-3h3v-2.5a5.5 5.5 0 0 1-3.7-3.6A5 5 0 0 1 3 7V4h4Zm-2 4v1a3 3 0 0 0 2 2.8V6Zm14 0h-2v3.8A3 3 0 0 0 19 7Z"/></svg>Leaderboard</a>
+        </nav>
+    </header>
