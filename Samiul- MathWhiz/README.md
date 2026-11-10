@@ -166,8 +166,7 @@ modulus answer or text in a number box shows an error message and the game conti
 ### Result Page
 ![Result Page](screenshots/result.png)
 
-### Leaderboard
-![Leaderboard](screenshots/leaderboard.png)
+
 
 ### Test Output
 ![Test Output](screenshots/tests.png)
