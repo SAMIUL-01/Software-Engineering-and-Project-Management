@@ -1,8 +1,11 @@
-# Software Engineering: Class Test (Software Design)
+# Class Test: Software Design (OBE-Based Question Paper)
 
 | | |
 |---|---|
-| **Course** | Software Engineering |
+| **Name** | Samiul Islam |
+| **Student ID** | IT24011 |
+| **Course Title** | Software Development and Project Management |
+| **Course Code** | ICT 3108 |
 | **Topic** | Software Design (Design Fundamentals, Metrics, Architecture, Patterns, EAA, UI Design) |
 | **Time** | 1 Hour |
 | **Full Marks** | 40 |
