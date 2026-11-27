@@ -1,0 +1,2 @@
+public class ReportPrinter {
+}
